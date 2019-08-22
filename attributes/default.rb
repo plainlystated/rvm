@@ -29,7 +29,6 @@ default['rvm']['user_rubies'] = []
 
 # list of gems to be installed in global gemset of all rubies
 _global_gems_ = [
-  { 'name'    => 'bundler' }
 ]
 default['rvm']['global_gems']       = _global_gems_.dup
 default['rvm']['user_global_gems']  = _global_gems_.dup
@@ -56,7 +55,7 @@ default['rvm']['group_id']      = 'default'
 default['rvm']['group_users']   = []
 
 # default rvm_gem_options (skip rdoc/ri generation)
-default['rvm']['rvm_gem_options'] = "--no-rdoc --no-ri"
+default['rvm']['rvm_gem_options'] = "--no-document"
 
 # a hook to disable installing any default/additional rubies
 default['rvm']['install_rubies']      = "true"
